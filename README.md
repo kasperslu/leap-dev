@@ -7,7 +7,7 @@ Navigate into the site’s directory and start it up.
 
 `npm start`
 
-2. **Open the source code and start editing!**
+2. **Open the browser.**
 
 The site is now running at `http://localhost:8080`!
 
