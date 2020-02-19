@@ -1,0 +1,31 @@
+.section {
+  margin-bottom: 48px;
+}
+
+.section--list {
+  .section__content {
+    flex-flow: column;
+  }
+}
+
+.section__title {
+  color: $oslogray;
+  font-size: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $iron;
+}
+
+.section__content {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: 32px;
+  }
+
+  .section__content--tiles {
+    flex-direction: column;
+    align-items: center;
+  }
+}

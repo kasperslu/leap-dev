@@ -1,0 +1,41 @@
+.button {
+  font-size: 14px;
+  border-radius: 4px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button--primary {
+  background-color: $denim;
+  padding: 0 24px;
+  color: $white;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: darken($denim, 5%);
+  }
+
+  &:active {
+    background-color: darken($denim, 8%);
+  }
+}
+
+.button--secondary {
+  background-color: $white;
+  padding: 0 32px;
+  border: 1px solid $oslogray;
+  color: $oslogray;
+
+  &:hover {
+    border: 1px solid darken($oslogray, 5%);
+    color: darken($oslogray, 5%);
+  }
+
+  &:active {
+    border: 1px solid darken($oslogray, 8%);
+    color: darken($oslogray, 8%);
+  }
+}

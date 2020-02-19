@@ -1,0 +1,98 @@
+$codgray: #191919;
+$white: #ffffff;
+$whitesmoke: #F5F5F5;
+$oslogray: #6D7278;
+$denim: #0E5FE3;
+$selago: #E8F0FC;
+$iron: #D2D5D9;
+$alto: #D8D8D8;
+$fuchsia: #6C5BC3;
+$mercury: #E2E2E2;
+
+@import './partials/Navigation';
+@import './partials/Container';
+@import './partials/Button';
+@import './partials/Header';
+@import './partials/Section';
+@import './partials/Tile';
+@import './partials/ListItem';
+@import './partials/Dropdown';
+@import "../node_modules/react-alice-carousel/lib/scss/alice-carousel.scss";
+@import './partials/Carousel';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: $white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $codgray;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app__navigation {
+  height: 100vh;
+  width: 240px;
+  background-color: $white;
+  overflow: auto;
+  transition: all 0.2s ease;
+}
+
+.app__content {
+  width: calc(100% - 240px);
+  background-color: $whitesmoke;
+  overflow: auto;
+  transition: all 0.2s ease;
+  position: relative;
+  left: 0;
+
+  &:after {
+    content: '';
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(25, 25, 25, 0);
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .app__navigation {
+    position: absolute;
+    left: -240px;
+  }
+
+  .app__navigation--mobile {
+    left: 0;
+  }
+
+  .app__content {
+    width: 100%;
+  }
+
+  .app__content--mobile {
+    left: 240px;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      display: block;
+      position: fixed;
+      background-color: rgba(25, 25, 25, 0.5);
+      top: 0;
+      opacity: 1;
+      height: 100vh;
+      z-index: 9999;
+    }
+  }
+}

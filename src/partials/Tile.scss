@@ -1,0 +1,48 @@
+.tile {
+  max-width: 368px;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 8px;
+  border: 1px solid $mercury;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 24px 24px 0 0;
+  position: relative;
+  bottom: 0;
+
+  &:hover {
+    border: 1px solid $mercury;
+    bottom: 2px;
+  }
+}
+
+.tile__content {
+  padding: 16px 64px 16px 16px;
+}
+
+.tile__description {
+  margin-bottom: 24px;
+  line-height: 24px;
+  user-select: none;
+}
+
+.tile__date {
+  color: $oslogray;
+  font-size: 14px;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .tile {
+    max-width: 100%;
+
+    &:nth-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  .tile__description {
+    margin-bottom: 48px;
+  }
+}

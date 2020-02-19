@@ -1,0 +1,38 @@
+.carousel {
+  margin-top: 16px;
+  display: none;
+}
+
+.carousel__dot {
+  width: 8px;
+  height: 8px;
+  background-color: $iron;
+  border-radius: 50%;
+
+  &:first-child {
+    background-color: $denim;
+  }
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.alice-carousel__dots {
+  display: none;
+}
+
+.alice-carousel__dots-item {
+  background-color: $iron;
+
+  &.__active {
+    background-color: $denim;
+  }
+}
+
+@media (max-width: 1024px) {
+  .alice-carousel__dots {
+    display: block;
+    margin: 16px 0 0 0;
+  }
+}
