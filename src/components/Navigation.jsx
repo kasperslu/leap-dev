@@ -29,7 +29,7 @@ const Navigation = (props) => (
         </NavLink>
       </div>
       <div className="navigation__bottom">
-        <NavLink className="navigation__link" activeClassName="navigation__link--active" to="/test5">
+        <NavLink className="navigation__link" activeClassName="navigation__link--active" to="/test5" onClick={props.toggleMenu}>
           <SVG src={HelpIcon} />Test5
         </NavLink>
       </div>
