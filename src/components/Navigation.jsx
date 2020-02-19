@@ -16,21 +16,21 @@ const Navigation = (props) => (
           <SVG src={HomeIcon} />Home
         </NavLink>
         <NavLink className="navigation__link" activeClassName="navigation__link--active" to="/test1" onClick={props.toggleMenu}>
-          <SVG src={HelpIcon} />Test1
+          <SVG src={HelpIcon} />Menu
         </NavLink>
         <NavLink className="navigation__link" activeClassName="navigation__link--active" to="/test2" onClick={props.toggleMenu}>
-          <SVG src={HelpIcon} />Test2
+          <SVG src={HelpIcon} />Menu
         </NavLink>
         <NavLink className="navigation__link" activeClassName="navigation__link--active" to="/test3" onClick={props.toggleMenu}>
-          <SVG src={HelpIcon} />Test3
+          <SVG src={HelpIcon} />Menu
         </NavLink>
         <NavLink className="navigation__link" activeClassName="navigation__link--active" to="/test4" onClick={props.toggleMenu}>
-          <SVG src={HelpIcon} />Test4
+          <SVG src={HelpIcon} />Menu
         </NavLink>
       </div>
       <div className="navigation__bottom">
         <NavLink className="navigation__link" activeClassName="navigation__link--active" to="/test5" onClick={props.toggleMenu}>
-          <SVG src={HelpIcon} />Test5
+          <SVG src={HelpIcon} />Menu
         </NavLink>
       </div>
     </div>
